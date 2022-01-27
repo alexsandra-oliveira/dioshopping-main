@@ -16,7 +16,7 @@ const Contatos = () => {
         const data = await response.json();
         setMessage(data);
     }, [render])
-
+    
     const sendMessage = () => {
         setValidator(false);
         if(author.length <= 0 || content.length <= 0){
